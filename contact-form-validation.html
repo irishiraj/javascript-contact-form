@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Contact form validation using javascript with example</title>
+<link rel='stylesheet' href='css/stylenew.css' type='text/css' />
+<script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/form-validate-new.js"></script>
+<script type= "text/javascript" src = "js/countries.js"></script>
+<!-- <script src="js/countryjs.js"></script> -->
+</head>
+
+<body>
+<div id="description"></div>
+<!--container start-->
+<div id="container">
+  <div id="container_body">
+    <div>
+      <h2 class="form_title">Contact Form</h2>
+      <p class="head_para">Form Validated Using Javascript</p>
+    </div>
+    <!--Form  start-->
+    <div id="form_name">
+      <div class="firstname">
+       <form name="form" >
+       <div id="errorBox"></div>
+        <input type="text" name="Name" value="" placeholder="First Name"  class="input_name" >
+        <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
+      </div>
+      <div class="email_form">
+        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+      </div>
+      <div class="Re_email_form">
+        <input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email">
+      </div>
+      <div class="phone">
+        <input type="text" name="phone" value="" placeholder="Phone" id="mobile" class="input_Re_email">
+      </div>
+        <div class="select-dropdown">
+            <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country"></select>
+            <select name ="state" id ="state"></select>
+        </div>
+       <div>
+        <p class="sign_user" onClick="Submit()">Submit</p>
+      </div>
+     </form>
+    </div>
+    <!--form ends-->
+  </div>
+</div>
+ <script language="javascript">print_country("country");</script>
+<!--container ends-->
+</body>
+</html>
