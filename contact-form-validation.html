@@ -8,6 +8,16 @@
 <script src="js/form-validate-new.js"></script>
 <script type= "text/javascript" src = "js/countries.js"></script>
 <!-- <script src="js/countryjs.js"></script> -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('input:text').each(
+          function(i,el) {
+            if (!el.value || el.value == '') {
+              el.placeholder = 'placeholdertext';
+          }
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -28,13 +38,16 @@
         <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
       </div>
       <div class="email_form">
-        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+        <input type="text" name="Email" value="" class="input_email">
       </div>
       <div class="Re_email_form">
         <input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email">
       </div>
       <div class="phone">
         <input type="text" name="phone" value="" placeholder="Phone" id="mobile" class="input_Re_email">
+      </div>
+      <div class="phone">
+        <input type="text" name="phone2" value="" id="mobile1" class="input_Re_email">
       </div>
         <div class="select-dropdown">
             <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country"></select>
