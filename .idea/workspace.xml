@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70790cc-3692-45ee-a3f6-5fecef4478d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-form-validation.html" afterPath="$PROJECT_DIR$/contact-form-validation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="javascript-form.iws" />
