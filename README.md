@@ -1,3 +1,2 @@
-# javascript-form
-Javascript Form Validation
-I have created contact form with javascript validation.
+# javascript-contact-form
+Javascript Contact Form Validation.
